@@ -23,7 +23,7 @@ datetime* Read_file_date(string file_name, int& n)
     while (getline(file, line))
     {
         istringstream line_(line);
-        line_ >> Date[i].hour >> Date[i].minute >> Date[i].second >> Date[i].day >> Date[i].month >> Date[i].year;
+        line_ >> Date[i].Get_hour() >> Date[i].Get_minute() >> Date[i].Get_second() >> Date[i].Get_day() >> Date[i].Get_month() >> Date[i].Get_year();
         i++;
     }
     file.close();
